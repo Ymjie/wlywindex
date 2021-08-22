@@ -2,7 +2,6 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 <title>齐鲁工业大学|网络运维</title>
 <!-- Stylesheets -->
 <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -933,7 +932,7 @@
                 type: "POST",//方法类型
                 timeout : 1000,
                 dataType: "json",//预期服务器返回的数据类型
-                url: "http://42.51.18.141/inc/postdata.php" ,//url
+                url: "https://ly.vimwq.com/inc/postdata.php" ,//url
                 data: $('#form1').serialize(),
                 success: function (result) {
                     console.log(result);//打印服务端返回的数据(调试用)
