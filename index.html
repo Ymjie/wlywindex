@@ -932,17 +932,14 @@
             //几个参数需要注意一下
                 type: "POST",//方法类型
                 timeout : 1000,
-                dataType: "jsonp",//预期服务器返回的数据类型
+                dataType: "json",//预期服务器返回的数据类型
                 url: "https://kt.vshex.com/inc/postdata.php" ,//url
                 data: $('#form1').serialize(),
                 success: function (result) {
                     console.log(result);//打印服务端返回的数据(调试用)
                     var a = eval(result);
                     alert(a['msg']);
-                }, xhrFields: {
-       withCredentials: true    // 前端设置是否带cookie
-   },
-		 crossDomain: true,
+                },
                 error : function() {
                     alert("异常！若重复多次失败，请加群反馈，感谢！");
                 }
