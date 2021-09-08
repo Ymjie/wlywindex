@@ -1,828 +1,865 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
-<head>
-<meta charset="utf-8">
-<title>齐鲁工业大学|网络运维</title>
-<!-- Stylesheets -->
-<link href="assets/css/bootstrap.css" rel="stylesheet">
-<link href="assets/css/style.css" rel="stylesheet">
-	
-<!-- Responsive File -->
-<link href="assets/css/responsive.css" rel="stylesheet">
-<!-- Color File -->
-<link href="assets/css/color.css" rel="stylesheet">
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8">
+		<title>齐鲁工业大学|网络运维</title>
+		<!-- Stylesheets -->
+		<link href="assets/css/bootstrap.css" rel="stylesheet">
+		<link href="assets/css/style.css" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<!-- Responsive File -->
+		<link href="assets/css/responsive.css" rel="stylesheet">
+		<!-- Color File -->
+		<link href="assets/css/color.css" rel="stylesheet">
 
-<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+		<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet">
 
-<!-- Responsive -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta http-equiv="Access-Control-Allow-Origin" content="*">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
-</head>
+		<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+		<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
 
-<body>
+		<!-- Responsive -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Access-Control-Allow-Origin" content="*">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+		<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 
-<div class="page-wrapper">
-    <!-- Preloader -->
-    <div class="loader-wrap">
-        <div class="preloader"><div class="preloader-close">Preloader Close</div></div>
-        <div class="layer layer-one"><span class="overlay"></span></div>
-        <div class="layer layer-two"><span class="overlay"></span></div>        
-        <div class="layer layer-three"><span class="overlay"></span></div>        
-    </div>
+		<!-- Wang Yuzhe -->
+		<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
 
-    <!-- Main Header -->
-    <header class="main-header header-style-one">
+	</head>
 
-        <!-- Header Top -->
-        <!-- <div class="header-top">
-            <div class="auto-container">
-                <div class="inner-container">
-                    <div class="left-column">
-                        <ul class="contact-info">
-                            <li><a href="404.html"><i class="pe-7s-paper-plane"></i>齐鲁工业大学图书馆1楼网络信息中心</a></li>
-                            <li><a href="404.html"><i class="pe-7s-mail-open"></i>QLU_NetworkOperationAndMaintenance@qlu.com</a></li>
-                            <li><i class="pe-7s-clock"></i>周一到周五：8:30am to 4:50pm</li>
-                        </ul>
-                    </div>
-                    <div class="right-column">
-                        <ul class="social-icon">
-                            社交媒体账号 <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div> -->
+	<body>
+		<div class="page-wrapper">
+			<!-- Preloader -->
+			<div class="loader-wrap">
+				<div class="preloader">
+					<div class="preloader-close">Preloader Close</div>
+				</div>
+				<div class="layer layer-one"><span class="overlay"></span></div>
+				<div class="layer layer-two"><span class="overlay"></span></div>
+				<div class="layer layer-three"><span class="overlay"></span></div>
+			</div>
 
-        <!-- Header Upper -->
-        <div class="header-upper">
-            <div class="auto-container">
-                <div class="inner-container">
-                    <!--Logo-->
-                    <div class="logo-box">
-                        <div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt=""></a></div>
-                    </div>
-                    <div class="right-column">
-                        <!--Nav Box-->
-                        <div class="nav-outer">
-                            <!--Mobile Navigation Toggler-->
-                            <div class="mobile-nav-toggler"><img src="assets/images/icons/icon-bar.png" alt=""></div>
+			<!-- Main Header -->
+			<header class="main-header header-style-one">
 
-                            <!-- Main Menu -->
-                            <nav class="main-menu navbar-expand-md navbar-light">
-                                <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-                                    <ul class="navigation">
-                                        <!--待页尾页首修改完成后，其他链接按风格修改 李杰相（孩子做不完了）-->
-                                        <li><a href="index.html">首页</a>
-                                        <!--</li>-->
-                                        <!--<li class="dropdown"><a>实用工具</a>-->
-                                        <!--    <ul>-->
-                                                <!--等人做一个下面的地址-->
-                                        <!--        <li><a href="guide-iphone-and-ipad-regist.html">iPhone&iPad校园网自动认证</a></li>-->
-                                        <!--        <li><a href="guide-how-to-use-vpn.html">回校VPN的使用</a></li>-->
-                                        <!--        <li><a href="http://bbs.qlunet.cn/" target="_blank">部门论坛</a></li>-->
-                                        <!--    </ul>-->
-                                        <!--</li>-->
-                                        <!--<li class="dropdown"><a>二级网站</a>-->
-                                        <!--    <ul>-->
-                                        <!--        等人做一个下面的地址-->
-                                        <!--        <li><a href="tool-compass.html">工具导航</a></li>-->
-                                        <!--        <li><a href="schools-compass.html" >校内网站导航</a></li>-->
-                                        <!--    </ul>-->
-                                        <!--</li>-->
-                                        <!-- <li class="dropdown"><a href="https://news.sina.com.cn/" target="_blank">新闻</a> -->
-                                            <li><a href="http://www.qlu.edu.cn/" target="_blank">学校官网</a></li>
-                                            <!--<li><a href="https:/netop.me/" target="_blank">QLU公益服务</a></li>-->
-                                        </li>
-                                        <li><a href="#form">加入我们</a></li>
-                                        <!--用锚点跳到本页面报名-->
-                                    </ul>
-                                </div>
-                            </nav>
-                        </div>
-                        <div class="navbar-right">
-                            <!-- <button type="button" class="theme-btn search-toggler"><span class="flaticon-search-1"></span></button> -->
-                            <div class="contact-info">
-                                <div class="icon"><span class="fas fa-phone-volume"></span></div>
-                                <div class="content">
-                                    <h5>校园网故障？联系我们</h5>
-                                    <h4>89631358</a></h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                        
-                </div>
-            </div>
-        </div>
-        <!--End Header Upper-->
+				<!-- Header Upper -->
+				<div class="header-upper">
+					<div class="auto-container">
+						<div class="inner-container">
+							<!--Logo-->
+							<div class="logo-box">
+								<div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+								</div>
+							</div>
+							<div class="right-column">
+								<!--Nav Box-->
+								<div class="nav-outer">
+									<!--Mobile Navigation Toggler-->
+									<div class="mobile-nav-toggler"><img src="assets/images/icons/icon-bar.png" alt="">
+									</div>
 
-        <!-- Sticky Header  -->
-        <div class="sticky-header">
-            <div class="header-upper">
-                <div class="auto-container">
-                    <div class="inner-container">
-                        <!--Logo-->
-                        <div class="logo-box">
-                            <div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt=""></a></div>
-                        </div>
-                        <div class="right-column">
-                            <!--Nav Box-->
-                            <div class="nav-outer">
-                                <!--Mobile Navigation Toggler-->
-                                <div class="mobile-nav-toggler"><img src="assets/images/icons/icon-bar.png" alt=""></div>
-    
-                                <!-- Main Menu -->
-                                <nav class="main-menu navbar-expand-md navbar-light">
-                                </nav>
-                            </div>
-                            <div class="navbar-right">
-                                <button type="button" class="theme-btn search-toggler"><span class="flaticon-search-1"></span></button>
-                                <div class="contact-info">
-                                    <div class="icon"><span class="fas fa-phone-volume"></span></div>
-                                    <div class="content">
-                                        <h5>校园网故障？联系我们</h5>
-                                        <h4><a>Call:89631358</a></h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                       
-                    </div>
-                </div>
-            </div>
-        </div><!-- End Sticky Menu -->
+									<!-- Main Menu -->
+									<nav class="main-menu navbar-expand-md navbar-light">
+										<div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+											<ul class="navigation">
+												<!--待页尾页首修改完成后，其他链接按风格修改 李杰相（孩子做不完了）-->
+												<li>
+													<a href="index.html">首页</a>
+												</li>
+												<li>
+													<a id="nav-res-site" href="http://172.17.21.90/">资源分享站</a>
+												</li>
+												<li>
+													<a href="http://www.qlu.edu.cn/" target="_blank">学校官网</a>
+												</li>
+												<li>
+													<a href="#form">加入我们</a>
+												</li>
+											</ul>
+										</div>
+									</nav>
+								</div>
+								<div class="navbar-right">
+									<!-- <button type="button" class="theme-btn search-toggler"><span class="flaticon-search-1"></span></button> -->
+									<div class="contact-info">
+										<div class="icon"><span class="fas fa-phone-volume"></span></div>
+										<div class="content">
+											<h5>校园网故障？联系我们</h5>
+											<h4>0531-89631358</a></h4>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--End Header Upper-->
 
-        <!-- Mobile Menu  -->
-        <div class="mobile-menu">
-            <div class="menu-backdrop"></div>
-            <div class="close-btn"><span class="icon flaticon-remove"></span></div>
-            
-            <nav class="menu-box">
-                <!-- <div class="nav-logo"><a href="index.html"><img src="assets/images/logo-2.png" alt="" title=""></a></div> -->
-                <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
-				<!--Social Links-->
-				<div class="social-links">
-					<ul class="clearfix">
-						<!--<li><a href="#"><span class="fab fa-twitter"></span></a></li>-->
-					</ul>
-                </div>
-            </nav>
-        </div><!-- End Mobile Menu -->
+				<!-- Sticky Header  -->
+				<div class="sticky-header">
+					<div class="header-upper">
+						<div class="auto-container">
+							<div class="inner-container">
+								<!--Logo-->
+								<div class="logo-box">
+									<div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+									</div>
+								</div>
+								<div class="right-column">
+									<!--Nav Box-->
+									<div class="nav-outer">
+										<!--Mobile Navigation Toggler-->
+										<div class="mobile-nav-toggler"><img src="assets/images/icons/icon-bar.png"
+												alt=""></div>
 
-        <div class="nav-overlay">
-            <div class="cursor"></div>
-            <div class="cursor-follower"></div>
-        </div>
-    </header>
-    <!-- End Main Header -->
+										<!-- Main Menu -->
+										<nav class="main-menu navbar-expand-md navbar-light">
+										</nav>
+									</div>
+									<div class="navbar-right">
+										<button type="button" class="theme-btn search-toggler"><span
+												class="flaticon-search-1"></span></button>
+										<div class="contact-info">
+											<div class="icon"><span class="fas fa-phone-volume"></span></div>
+											<div class="content">
+												<h5>校园网故障？联系我们</h5>
+												<h4><a>0531-89631358</a></h4>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div><!-- End Sticky Menu -->
 
-    <!--Search Popup-->
-    <div id="search-popup" class="search-popup">
-        <div class="close-search theme-btn"><span class="flaticon-remove"></span></div>
-        <div class="popup-inner">
-            <div class="overlay-layer"></div>
-            <div class="search-form">
-                <form method="post" action="index.html">
-                    <div class="form-group">
-                        <fieldset>
-                            <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required >
-                            <input type="submit" value="Search Now!" class="theme-btn">
-                        </fieldset>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
+				<!-- Mobile Menu  -->
+				<div class="mobile-menu">
+					<div class="menu-backdrop"></div>
+					<div class="close-btn"><span class="icon flaticon-remove"></span></div>
 
-    <!-- Bnner Section -->
-    <section class="banner-section">
-        <div class="swiper-container banner-slider">
-            <div class="swiper-wrapper">
-                <!-- Slide Item -->
-                <!--这个图片还没修改，找素材，应该是机房的吧 李杰相-->
-                <!--报修的宣传栏-->
-                <div class="swiper-slide" style="background-image: url(assets/images/jifang.jpg);">
-                    <div class="content-outer">
-                        <div class="content-box justify-content-center">
-                            <div class="inner text-center">
-                                <h1>网络连接故障修复<br>Fix The Network Connect</h1>
-                                <!--<div class="text">求文案-->
-                                    <!--</div>-->
-                                <div class="link-box">
-                                    <!-- <a href="repair.html" class="theme-btn btn-style-one"><span>故障报修</span></a> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Slide Item -->
-                <!--校园网安全防范-->
-                <div class="swiper-slide" style="background-image: url(assets/images/main-slider/NetworkSafe.jpg);">
-                    <div class="content-outer">
-                        <div class="content-box">
-                            <div class="inner">
-                                <h1>校园网络安全防范<br>Protect Network Safe</h1>
-                                <!--<div class="text">求文案-->
-                                    <!--</div>-->
-                                <div class="link-box">
-                                    <!-- <a href="school-network-safty.html" class="theme-btn btn-style-one"><span>了解更多</span></a> -->
-                                </div>
-                            </div>                             
-                        </div>
-                    </div>
-                </div>
-                <!-- Slide Item -->
-                <!--招新-->
-                <div class="swiper-slide" style="background-image: url(assets/images/main-slider/JoinUs.jpeg);">
-                    <div class="content-outer">
-                        <div class="content-box">
-                            <div class="inner">
-                                <h1>你长得好像我同事<br>点击报名</h1>
-                                <!--<div class="text">求文案-->
-                                    <!--</div>-->
-                                <div class="link-box">
-                                    <!--需要一个js脚本，移到报名的信息栏-->
-                                    <a href="#form1" class="theme-btn btn-style-one"><span>Join Us!</span></a>
-                                </div>
-                            </div>                             
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="banner-slider-nav">
-            <div class="banner-slider-control banner-slider-button-prev"><span><i class="flaticon-left-arrow"></i></span></div>
-            <div class="banner-slider-control banner-slider-button-next"><span><i class="flaticon-left-arrow"></i></span> </div>
-        </div>
-    </section>
-    <!-- End Bnner Section -->
+					<nav class="menu-box">
+						<!-- <div class="nav-logo"><a href="index.html"><img src="assets/images/logo-2.png" alt="" title=""></a></div> -->
+						<div class="menu-outer">
+							<!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+						</div>
+						<!--Social Links-->
+						<div class="social-links">
+							<ul class="clearfix">
+								<!--<li><a href="#"><span class="fab fa-twitter"></span></a></li>-->
+							</ul>
+						</div>
+					</nav>
+				</div><!-- End Mobile Menu -->
 
-    <!-- Services section -->
-    <!--求文案都是些介绍性的东西 李杰相-->
-    <section class="services-section">
-        <div class="auto-container">
-            <div class="row no-gutters">
-                <div class="service-block-one col-lg-3 col-md-6">
-                    <div class="inner-box">
-                        <div class="icon">
-                            <img src="assets/images/icons/icon-3.png" alt="">
-                            <div class="hover-icon"><img src="assets/images/icons/icon-3.png" alt=""></div>
-                        </div>
-                        <div class="lower-content">
-                            <h4>初步了解 <br>  网络运维</h4>
-                            <div class="text">加入我们之前你至少得知道
-                                 我们是干嘛的 总之看看就对了</div>
-                            <div class="read-more-btn">
-                                <a href="#who" class="theme-btn btn-style-one"><div>了解更多</div></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="service-block-one col-lg-3 col-md-6">
-                    <div class="inner-box">
-                        <div class="icon">
-                            <img src="assets/images/icons/icon-4.png" alt="">
-                            <div class="hover-icon"><img src="assets/images/icons/icon-4.png" alt=""></div>
-                        </div>
-                        <div class="lower-content">
-                            <h4>加入部门后的<br> 分组与培训</h4>
-                            <div class="text">为了融入我们你得学点本事
-                                我们不拒绝憨憨，我们把憨憨变成学术憨憨
-                                看看你能学到什么.</div>
-                                <div class="read-more-btn">
-                                    <a href="#how" class="theme-btn btn-style-one"><div>了解更多</div></a>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="service-block-one col-lg-3 col-md-6">
-                    <div class="inner-box">
-                        <div class="icon">
-                            <img src="assets/images/icons/icon-5.png" alt="">
-                            <div class="hover-icon"><img src="assets/images/icons/icon-5.png" alt=""></div>
-                        </div>
-                        <div class="lower-content">
-                            <h4>网络运维人 <br>是怎么运作的</h4>
-                            <div class="text">说明白点 我们是如何上班的
-                                看看符合不符合你心中的打工人
-                                we want you！</div>
-                                <div class="read-more-btn">
-                                    <a href="#job" class="theme-btn btn-style-one"><div>了解更多</div></a>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="service-block-one col-lg-3 col-md-6">
-                    <div class="inner-box" >
-                        <div class="icon">
-                            <img src="assets/images/icons/icon-6.png" alt="">
-                            <div class="hover-icon"><img src="assets/images/icons/icon-6.png" alt=""></div>
-                        </div>
-                        <div class="lower-content">
-                            <h4>加入我们！<br> 点这里直接填报名表</h4>
-                            <div class="text">尽管自信是ADC的第一件装备
-                                但是我还是建议你看看我们的介绍
-                                不过直接报名也不会后悔就是了。
-                                </div>
-                                <div class="read-more-btn">
-                                    <a href="#form1" class="theme-btn btn-style-one"><div>了解更多</div></a>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+				<div class="nav-overlay">
+					<div class="cursor"></div>
+					<div class="cursor-follower"></div>
+				</div>
+			</header>
+			<!-- End Main Header -->
 
-    <!-- About Section -->
-    <section class="about-section pt-0">
-        <div class="auto-container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="image-block">
-                        <div class="image-one"><img src="assets/images/jifang.jpg" alt=""></div>
-                        <!-- <div class="image-two"><img src="assets/images/resource/image-2.jpg" alt=""></div> -->
-                    </div>
-                </div>
-                <div id="who" class="col-lg-6">
-                    <div class="content-block">
-                        <div class="sec-title mb-20">
-                            <div class="sub-title">Who we are?</div>
-                            <h2>网络运维 <br> The Network Maintains &</br>Operations</h2>
-                        </div>
-                        <div class="text">网络运维是校级组织之一，主负责办公区校园网的维护与故障处理，学校中心机房和网络服务器的维护工作。部门为所有成员提供一个自由的平台，培养各项网络技能，无上下级之分，氛围和谐。工作环境自由，提供网络大赛参赛机会以及自习环境。部门自配服务器，供成员学习，并提供NAS服务。除日常工作，可以尽情发展自己的科技爱好，为参加比赛打下基础。加入网络运维，学长学姐教你如何变身科技大佬！</div>
-                        <div class="bottom-content">
-                            <!--<h4>Offering special computer helps <br> click here to book!</h4>-->
-                            <div class="contact-number">
-                                <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=HHadh2UC"><i class="fa fa-users"></i>QQ群：290892790</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+			<!--Search Popup-->
+			<div id="search-popup" class="search-popup">
+				<div class="close-search theme-btn"><span class="flaticon-remove"></span></div>
+				<div class="popup-inner">
+					<div class="overlay-layer"></div>
+					<div class="search-form">
+						<form method="post" action="index.html">
+							<div class="form-group">
+								<fieldset>
+									<input type="search" class="form-control" name="search-input" value=""
+										placeholder="Search Here" required>
+									<input type="submit" value="Search Now!" class="theme-btn">
+								</fieldset>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
 
-    <!-- Driving Courses section -->
-    <section id="how" class="driving-courses-section">
-        <div class="sec-bg" style="background-image: url(assets/images/background/bg-2.jpg);"></div>
-        <div class="auto-container">
-            <div class="top-content row m-0 justify-content-between align-items-center">
-                <div class="sec-title light">
-                    <div class="sub-title">行如网络运维人 </div>
-                    <h2>加入部门后 <br> 部门的培训与分组</h2>
-                    </div>
-                <div class="text">试用期一个月内，每周两次例会，由学长学姐手把手带你轻松入门。 <br> 转正后会分为服务器组、网页组、宣传组，定期会进行课程教学。 <br> 部门随机抽检了解成员学习情况，每周两次例会汇报工作情况。 </div>
-            </div>
-                       <!--Project Tabs-->
-            <div class="project-tab">
-                    
-                <div class="tab-btns-box">
-                    <!--Tabs Header-->
-                    <div class="tabs-header">
-                        <ul class="project-tab-btns clearfix">
-                            <li class="p-tab-btn active-btn" data-tab="#p-tab-1">试用期技能培训</li>
-                            <li class="p-tab-btn " data-tab="#p-tab-2">转正后分组与定期课程</li>
-                            <li class="p-tab-btn" data-tab="#p-tab-3">随机技能抽检与例会</li>
-                        </ul>
-                    </div>
-                </div> 
-                <div class="outer-box">
-                    <!--Tabs Content-->  
-                    <div class="p-tabs-content">
-                        <!--Project Tab / Active Tab-->
-                        <div class="p-tab" id="p-tab-1">
-                            <div class="row row-10">
-                                <div class="theme_carousel owl-theme owl-carousel" data-options='{"loop": true, "margin": 0, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 1000, "responsive":{ "0" :{ "items": "1" }, "600" :{ "items" : "1" }, "768" :{ "items" : "2" } , "992":{ "items" : "3" }, "1200":{ "items" : "3" }}}'>
-                                    <div class="col-lg-12 course-block">
-                                        <div class="inner-box">
-                                            <!-- <div class="image"><img src="assets/images/resource/image-3.jpg" alt=""></div> -->
-                                            <div class="lower-content">
-                                                <h4><a href="highway-drive.html">网站组</a></h4>
-                                                <div class="text">学习编程制作网页<br>  并对网页进行美术设计<br> </div>
-                                                <div class="course-info">
-                                                    <div class="instructor">
-                                                        <!-- <div class="thumb"><img src="assets/images/resource/author-1.jpg" alt=""></div> -->
-                                                        <!-- <h5>James Thomas</h5> -->
-                                                        <!-- <div class="designation">Instructor</div> -->
-                                                    </div>
-                                                    <div class="price">
-                                                        <!-- <div class="thumb"><img src="assets/images/resource/image-6.jpg" alt=""></div> -->
-                                                        <!-- <h5>Starts From <br> $45 - $170</h5> -->
-                                                    </div>
-                                                </div>
-                                                <!-- <div class="link-btn"><a href="highway-drive.html" class="theme-btn btn-style-one style-three"><span>View Course Details</span></a></div> -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 course-block">
-                                        <div class="inner-box">
-                                            <!-- <div class="image"><img src="assets/images/resource/image-4.jpg" alt=""></div> -->
-                                            <div class="lower-content">
-                                                <h4><a href="automatic-car-pack.html">服务器组</a></h4>
-                                                <div class="text">对部门内多台服务器具有使用、管理权限<br>同时开发并维护一套仅供本校学生使用的资源分享站 <br> </div>
-                                                <div class="course-info">
-                                                    <div class="instructor">
-                                                        <!-- <div class="thumb"><img src="assets/images/resource/author-1.jpg" alt=""></div> -->
-                                                        <!-- <h5>James Thomas</h5> -->
-                                                        <!-- <div class="designation">Instructor</div> -->
-                                                    </div>
-                                                    <div class="price">
-                                                        <!-- <div class="thumb"><img src="assets/images/resource/image-6.jpg" alt=""></div> -->
-                                                        <!-- <h5>Starts From <br> $25 - $60</h5> -->
-                                                    </div>
-                                                </div>
-                                                <!-- <div class="link-btn"><a href="automatic-car-pack.html" class="theme-btn btn-style-one style-three"><span>View Course Details</span></a></div> -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 course-block">
-                                        <div class="inner-box">
-                                            <!-- <div class="image"><img src="assets/images/resource/image-5.jpg" alt=""></div> -->
-                                            <div class="lower-content">
-                                                <h4><a href="international-drive.html">宣传组</a></h4>
-                                                <div class="text">宣传制作logo<br> 海报、工作证、工作服、宣传视频拍摄与剪辑<br> </div>
-                                                <div class="course-info">
-                                                    <div class="instructor">
-                                                        <!-- <div class="thumb"><img src="assets/images/resource/author-1.jpg" alt=""></div> -->
-                                                        <!-- <h5>James Thomas</h5> -->
-                                                        <!-- <div class="designation">Instructor</div> -->
-                                                    </div>
-                                                    <div class="price">
-                                                        <!-- <div class="thumb"><img src="assets/images/resource/image-6.jpg" alt=""></div> -->
-                                                        <!-- <h5>Starts From <br> $80 - $210</h5> -->
-                                                    </div>
-                                                </div>
-                                                <!-- <div class="link-btn"><a href="international-drive.html" class="theme-btn btn-style-one style-three"><span>View Course Details</span></a></div> -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!--Project Tab-->
-                        <div class="p-tab active-tab" id="p-tab-2">
-                            <div class="row row-10">
-                                <div class="theme_carousel owl-theme owl-carousel" data-options='{"loop": true, "margin": 0, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 1000, "responsive":{ "0" :{ "items": "1" }, "600" :{ "items" : "1" }, "768" :{ "items" : "2" } , "992":{ "items" : "3" }, "1200":{ "items" : "3" }}}'>
-                                    <div class="col-lg-12 course-block">
-                                        <div class="inner-box">
-                                            <!-- <div class="image"><img src="assets/images/resource/image-3.jpg" alt=""></div> -->
-                                            <div class="lower-content">
-                                                <h4><a href="highway-drive.html">网站组</a></h4>
-                                                <div class="text">学习编程制作网页<br>  并对网页进行美术设计<br> </div>
-                                                <div class="course-info">
-                                                    <div class="instructor">
-                                                        <!-- <div class="thumb"><img src="assets/images/resource/author-1.jpg" alt=""></div> -->
-                                                        <!-- <h5>James Thomas</h5> -->
-                                                        <!-- <div class="designation">Instructor</div> -->
-                                                    </div>
-                                                    <div class="price">
-                                                        <!-- <div class="thumb"><img src="assets/images/resource/image-6.jpg" alt=""></div> -->
-                                                        <!-- <h5>Starts From <br> $45 - $170</h5> -->
-                                                    </div>
-                                                </div>
-                                                <!-- <div class="link-btn"><a href="highway-drive.html" class="theme-btn btn-style-one style-three"><span>View Course Details</span></a></div> -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 course-block">
-                                        <div class="inner-box">
-                                            <!-- <div class="image"><img src="assets/images/resource/image-4.jpg" alt=""></div> -->
-                                            <div class="lower-content">
-                                                <h4><a href="automatic-car-pack.html">服务器组</a></h4>
-                                                <div class="text">对部门内多台服务器具有使用、管理权限<br>同时开发并维护一套仅供本校学生使用的资源分享站 <br> </div>
-                                                <div class="course-info">
-                                                    <div class="instructor">
-                                                        <!-- <div class="thumb"><img src="assets/images/resource/author-1.jpg" alt=""></div> -->
-                                                        <!-- <h5>James Thomas</h5> -->
-                                                        <!-- <div class="designation">Instructor</div> -->
-                                                    </div>
-                                                    <div class="price">
-                                                        <!-- <div class="thumb"><img src="assets/images/resource/image-6.jpg" alt=""></div> -->
-                                                        <!-- <h5>Starts From <br> $25 - $60</h5> -->
-                                                    </div>
-                                                </div>
-                                                <!-- <div class="link-btn"><a href="automatic-car-pack.html" class="theme-btn btn-style-one style-three"><span>View Course Details</span></a></div> -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 course-block">
-                                        <div class="inner-box">
-                                            <!-- <div class="image"><img src="assets/images/resource/image-5.jpg" alt=""></div> -->
-                                            <div class="lower-content">
-                                                <h4><a href="international-drive.html">宣传组</a></h4>
-                                                <div class="text">宣传制作logo<br> 海报、工作证、工作服、宣传视频拍摄与剪辑<br> </div>
-                                                <div class="course-info">
-                                                    <div class="instructor">
-                                                        <!-- <div class="thumb"><img src="assets/images/resource/author-1.jpg" alt=""></div> -->
-                                                        <!-- <h5>James Thomas</h5> -->
-                                                        <!-- <div class="designation">Instructor</div> -->
-                                                    </div>
-                                                    <div class="price">
-                                                        <!-- <div class="thumb"><img src="assets/images/resource/image-6.jpg" alt=""></div> -->
-                                                        <!-- <h5>Starts From <br> $80 - $210</h5> -->
-                                                    </div>
-                                                </div>
-                                                <!-- <div class="link-btn"><a href="international-drive.html" class="theme-btn btn-style-one style-three"><span>View Course Details</span></a></div> -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!--Project Tab-->
-                        <div class="p-tab" id="p-tab-3">
-                            <div class="row row-10">
-                                <div class="theme_carousel owl-theme owl-carousel" data-options='{"loop": true, "margin": 0, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 1000, "responsive":{ "0" :{ "items": "1" }, "600" :{ "items" : "1" }, "768" :{ "items" : "2" } , "992":{ "items" : "3" }, "1200":{ "items" : "3" }}}'>
-                                    <div class="col-lg-12 course-block">
-                                        <div class="inner-box">
-                                            <!-- <div class="image"><img src="assets/images/resource/image-3.jpg" alt=""></div> -->
-                                            <div class="lower-content">
-                                                <h4><a href="highway-drive.html">网页组</a></h4>
-                                                <div class="text">学习编程制作网页<br>  并对网页进行美术设计<br> </div>
-                                                <div class="course-info">
-                                                    <div class="instructor">
-                                                        <!-- <div class="thumb"><img src="assets/images/resource/author-1.jpg" alt=""></div> -->
-                                                        <!-- <h5>James Thomas</h5> -->
-                                                        <!-- <div class="designation">Instructor</div> -->
-                                                    </div>
-                                                    <div class="price">
-                                                        <!-- <div class="thumb"><img src="assets/images/resource/image-6.jpg" alt=""></div> -->
-                                                        <!-- <h5>Starts From <br> $45 - $170</h5> -->
-                                                    </div>
-                                                </div>
-                                                <!-- <div class="link-btn"><a href="highway-drive.html" class="theme-btn btn-style-one style-three"><span>View Course Details</span></a></div> -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 course-block">
-                                        <div class="inner-box">
-                                            <!-- <div class="image"><img src="assets/images/resource/image-4.jpg" alt=""></div> -->
-                                            <div class="lower-content">
-                                                <h4><a href="automatic-car-pack.html">服务器组</a></h4>
-                                                <div class="text">对部门内多台服务器具有使用、管理权限<br>同时开发并维护一套仅供本校学生使用的资源分享站 <br> </div>
-                                                <div class="course-info">
-                                                    <div class="instructor">
-                                                        <!-- <div class="thumb"><img src="assets/images/resource/author-1.jpg" alt=""></div> -->
-                                                        <!-- <h5>James Thomas</h5> -->
-                                                        <!-- <div class="designation">Instructor</div> -->
-                                                    </div>
-                                                    <div class="price">
-                                                        <!-- <div class="thumb"><img src="assets/images/resource/image-6.jpg" alt=""></div> -->
-                                                        <!-- <h5>Starts From <br> $25 - $60</h5> -->
-                                                    </div>
-                                                </div>
-                                                <!-- <div class="link-btn"><a href="automatic-car-pack.html" class="theme-btn btn-style-one style-three"><span>View Course Details</span></a></div> -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 course-block">
-                                        <div class="inner-box">
-                                            <!-- <div class="image"><img src="assets/images/resource/image-5.jpg" alt=""></div> -->
-                                            <div class="lower-content">
-                                                <h4><a href="international-drive.html">宣传组</a></h4>
-                                                <div class="text">宣传制作logo<br> 海报、工作证、工作服、宣传视频拍摄与剪辑<br> </div>
-                                                <div class="course-info">
-                                                    <div class="instructor">
-                                                        <!-- <div class="thumb"><img src="assets/images/resource/author-1.jpg" alt=""></div> -->
-                                                        <!-- <h5>James Thomas</h5> -->
-                                                        <!-- <div class="designation">Instructor</div> -->
-                                                    </div>
-                                                    <div class="price">
-                                                        <!-- <div class="thumb"><img src="assets/images/resource/image-6.jpg" alt=""></div> -->
-                                                        <!-- <h5>Starts From <br> $80 - $210</h5> -->
-                                                    </div>
-                                                </div>
-                                                <!-- <div class="link-btn"><a href="international-drive.html" class="theme-btn btn-style-one style-three"><span>View Course Details</span></a></div> -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>                    
-                </div>
-            </div>
-        </div>
-    </section>
+			<!-- Bnner Section -->
+			<section class="banner-section">
+				<div class="swiper-container banner-slider">
+					<div class="swiper-wrapper">
+						<!-- Slide Item -->
+						<!--这个图片还没修改，找素材，应该是机房的吧 李杰相-->
+						<!--报修的宣传栏-->
+						<div class="swiper-slide" style="background-image: url(assets/images/jifang.jpg);">
+							<div class="content-outer">
+								<div class="content-box justify-content-center">
+									<div class="inner text-center">
+										<h1>网络连接故障修复<br>Fix The Network Connection</h1>
+										<!--</div>-->
+										<div class="link-box">
+											<!-- <a href="repair.html" class="theme-btn btn-style-one"><span>故障报修</span></a> -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Slide Item -->
+						<!--校园网安全防范-->
+						<div class="swiper-slide"
+							style="background-image: url(assets/images/main-slider/NetworkSafe.jpg);">
+							<div class="content-outer">
+								<div class="content-box">
+									<div class="inner">
+										<h1>校园网络安全防范<br>Protect Network Safe</h1>
+										<!--</div>-->
+										<div class="link-box">
+											<!-- <a href="school-network-safty.html" class="theme-btn btn-style-one"><span>了解更多</span></a> -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Slide Item -->
+						<!--招新-->
+						<div class="swiper-slide" style="background-image: url(assets/images/main-slider/JoinUs.jpeg);">
+							<div class="content-outer">
+								<div class="content-box">
+									<div class="inner">
+										<h1>你长得好像我同事<br>点击报名</h1>
+										<!--</div>-->
+										<div class="link-box">
+											<a href="#form1" class="theme-btn btn-style-one"><span>Join Us!</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="banner-slider-nav">
+					<div class="banner-slider-control banner-slider-button-prev"><span><i
+								class="flaticon-left-arrow"></i></span></div>
+					<div class="banner-slider-control banner-slider-button-next"><span><i
+								class="flaticon-left-arrow"></i></span> </div>
+				</div>
+			</section>
+			<!-- End Bnner Section -->
+
+			<!-- Services section -->
+			<!--求文案都是些介绍性的东西 李杰相-->
+			<section class="services-section">
+				<div class="auto-container">
+					<div class="row no-gutters">
+						<div class="service-block-one col-lg-3 col-md-6">
+							<div class="inner-box">
+								<div class="icon">
+									<img src="assets/images/icons/icon-3.png" alt="">
+									<div class="hover-icon"><img src="assets/images/icons/icon-3.png" alt=""></div>
+								</div>
+								<div class="lower-content">
+									<h4>初步了解 <br> 网络运维</h4>
+									<div class="text">加入我们之前你至少得知道
+										我们是干嘛的 总之看看就对了</div>
+									<div class="read-more-btn">
+										<a href="#who" class="theme-btn btn-style-one">
+											<div>了解更多</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="service-block-one col-lg-3 col-md-6">
+							<div class="inner-box">
+								<div class="icon">
+									<img src="assets/images/icons/icon-4.png" alt="">
+									<div class="hover-icon"><img src="assets/images/icons/icon-4.png" alt=""></div>
+								</div>
+								<div class="lower-content">
+									<h4>加入部门后的<br> 分组与培训</h4>
+									<div class="text">为了融入我们你得学点本事
+										我们不拒绝憨憨，我们把憨憨变成学术憨憨
+										看看你能学到什么.</div>
+									<div class="read-more-btn">
+										<a href="#how" class="theme-btn btn-style-one">
+											<div>了解更多</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="service-block-one col-lg-3 col-md-6">
+							<div class="inner-box">
+								<div class="icon">
+									<img src="assets/images/icons/icon-5.png" alt="">
+									<div class="hover-icon"><img src="assets/images/icons/icon-5.png" alt=""></div>
+								</div>
+								<div class="lower-content">
+									<h4>网络运维人 <br>是怎么运作的</h4>
+									<div class="text">说明白点 我们是如何上班的
+										看看符合不符合你心中的打工人
+										we want you！</div>
+									<div class="read-more-btn">
+										<a href="#job" class="theme-btn btn-style-one">
+											<div>了解更多</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="service-block-one col-lg-3 col-md-6">
+							<div class="inner-box">
+								<div class="icon">
+									<img src="assets/images/icons/icon-6.png" alt="">
+									<div class="hover-icon"><img src="assets/images/icons/icon-6.png" alt=""></div>
+								</div>
+								<div class="lower-content">
+									<h4>加入我们！<br> 点这里直接填报名表</h4>
+									<div class="text">尽管自信是ADC的第一件装备
+										但是我还是建议你看看我们的介绍
+										不过直接报名也不会后悔就是了。
+									</div>
+									<div class="read-more-btn">
+										<a href="#form1" class="theme-btn btn-style-one">
+											<div>了解更多</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- About Section -->
+			<section class="about-section pt-0">
+				<div class="auto-container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="image-block">
+								<div class="image-one"><img src="assets/images/jifang.jpg" alt=""></div>
+								<!-- <div class="image-two"><img src="assets/images/resource/image-2.jpg" alt=""></div> -->
+							</div>
+						</div>
+						<div id="who" class="col-lg-6">
+							<div class="content-block">
+								<div class="sec-title mb-20">
+									<div class="sub-title">Who we are?</div>
+									<h2>网络运维 <br> The Network Maintains &</br>Operations</h2>
+								</div>
+								<div class="text">
+									网络运维是校级组织之一，主负责办公区校园网的维护与故障处理，学校中心机房和网络服务器的维护工作。部门为所有成员提供一个自由的平台，培养各项网络技能，无上下级之分，氛围和谐。工作环境自由，提供网络大赛参赛机会以及自习环境。部门自配服务器，供成员学习，并提供NAS服务。除日常工作，可以尽情发展自己的科技爱好，为参加比赛打下基础。加入网络运维，学长学姐教你如何变身科技大佬！
+								</div>
+								<div class="bottom-content">
+									<!--<h4>Offering special computer helps <br> click here to book!</h4>-->
+									<div class="contact-number">
+										<a target="_blank" href="https://jq.qq.com/?_wv=1027&k=HHadh2UC"><i
+												class="fa fa-users"></i>QQ群：290892790</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Driving Courses section -->
+			<section id="how" class="driving-courses-section">
+				<div class="sec-bg" style="background-image: url(assets/images/background/bg-2.jpg);"></div>
+				<div class="auto-container">
+					<div class="top-content row m-0 justify-content-between align-items-center">
+						<div class="sec-title light">
+							<div class="sub-title">行如网络运维人 </div>
+							<h2>加入部门后 <br> 部门的培训与分组</h2>
+						</div>
+						<div class="text">试用期一个月内，每周两次例会，由学长学姐手把手带你轻松入门。 <br> 转正后会分为服务器组、网页组、宣传组，定期会进行课程教学。 <br>
+							部门随机抽检了解成员学习情况，每周两次例会汇报工作情况。 </div>
+					</div>
+					<!--Project Tabs-->
+					<div class="project-tab">
+
+						<div class="tab-btns-box">
+							<!--Tabs Header-->
+							<div class="tabs-header">
+								<ul class="project-tab-btns clearfix">
+									<li class="p-tab-btn active-btn" data-tab="#p-tab-1">试用期技能培训</li>
+									<li class="p-tab-btn " data-tab="#p-tab-2">转正后分组与定期课程</li>
+									<li class="p-tab-btn" data-tab="#p-tab-3">随机技能抽检与例会</li>
+								</ul>
+							</div>
+						</div>
+						<div class="outer-box">
+							<!--Tabs Content-->
+							<div class="p-tabs-content">
+								<!--Project Tab / Active Tab-->
+								<div class="p-tab" id="p-tab-1">
+									<div class="row row-10">
+										<div class="theme_carousel owl-theme owl-carousel"
+											data-options='{"loop": true, "margin": 0, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 1000, "responsive":{ "0" :{ "items": "1" }, "600" :{ "items" : "1" }, "768" :{ "items" : "2" } , "992":{ "items" : "3" }, "1200":{ "items" : "3" }}}'>
+											<div class="col-lg-12 course-block">
+												<div class="inner-box">
+													<!-- <div class="image"><img src="assets/images/resource/image-3.jpg" alt=""></div> -->
+													<div class="lower-content">
+														<h4><a href="highway-drive.html">网站组</a></h4>
+														<div class="text">学习编程制作网页<br> 并对网页进行美术设计<br> </div>
+														<div class="course-info">
+															<div class="instructor">
+																<!-- <div class="thumb"><img src="assets/images/resource/author-1.jpg" alt=""></div> -->
+																<!-- <h5>James Thomas</h5> -->
+																<!-- <div class="designation">Instructor</div> -->
+															</div>
+															<div class="price">
+																<!-- <div class="thumb"><img src="assets/images/resource/image-6.jpg" alt=""></div> -->
+																<!-- <h5>Starts From <br> $45 - $170</h5> -->
+															</div>
+														</div>
+														<!-- <div class="link-btn"><a href="highway-drive.html" class="theme-btn btn-style-one style-three"><span>View Course Details</span></a></div> -->
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-12 course-block">
+												<div class="inner-box">
+													<!-- <div class="image"><img src="assets/images/resource/image-4.jpg" alt=""></div> -->
+													<div class="lower-content">
+														<h4><a href="automatic-car-pack.html">服务器组</a></h4>
+														<div class="text">对部门内多台服务器具有使用、管理权限<br>同时开发并维护一套仅供本校学生使用的资源分享站
+															<br>
+														</div>
+														<div class="course-info">
+															<div class="instructor">
+																<!-- <div class="thumb"><img src="assets/images/resource/author-1.jpg" alt=""></div> -->
+																<!-- <h5>James Thomas</h5> -->
+																<!-- <div class="designation">Instructor</div> -->
+															</div>
+															<div class="price">
+																<!-- <div class="thumb"><img src="assets/images/resource/image-6.jpg" alt=""></div> -->
+																<!-- <h5>Starts From <br> $25 - $60</h5> -->
+															</div>
+														</div>
+														<!-- <div class="link-btn"><a href="automatic-car-pack.html" class="theme-btn btn-style-one style-three"><span>View Course Details</span></a></div> -->
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-12 course-block">
+												<div class="inner-box">
+													<!-- <div class="image"><img src="assets/images/resource/image-5.jpg" alt=""></div> -->
+													<div class="lower-content">
+														<h4><a href="international-drive.html">宣传组</a></h4>
+														<div class="text">宣传制作logo<br> 海报、工作证、工作服、宣传视频拍摄与剪辑<br> </div>
+														<div class="course-info">
+															<div class="instructor">
+																<!-- <div class="thumb"><img src="assets/images/resource/author-1.jpg" alt=""></div> -->
+																<!-- <h5>James Thomas</h5> -->
+																<!-- <div class="designation">Instructor</div> -->
+															</div>
+															<div class="price">
+																<!-- <div class="thumb"><img src="assets/images/resource/image-6.jpg" alt=""></div> -->
+																<!-- <h5>Starts From <br> $80 - $210</h5> -->
+															</div>
+														</div>
+														<!-- <div class="link-btn"><a href="international-drive.html" class="theme-btn btn-style-one style-three"><span>View Course Details</span></a></div> -->
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!--Project Tab-->
+								<div class="p-tab active-tab" id="p-tab-2">
+									<div class="row row-10">
+										<div class="theme_carousel owl-theme owl-carousel"
+											data-options='{"loop": true, "margin": 0, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 1000, "responsive":{ "0" :{ "items": "1" }, "600" :{ "items" : "1" }, "768" :{ "items" : "2" } , "992":{ "items" : "3" }, "1200":{ "items" : "3" }}}'>
+											<div class="col-lg-12 course-block">
+												<div class="inner-box">
+													<!-- <div class="image"><img src="assets/images/resource/image-3.jpg" alt=""></div> -->
+													<div class="lower-content">
+														<h4><a href="highway-drive.html">网站组</a></h4>
+														<div class="text">学习编程制作网页<br> 并对网页进行美术设计<br> </div>
+														<div class="course-info">
+															<div class="instructor">
+																<!-- <div class="thumb"><img src="assets/images/resource/author-1.jpg" alt=""></div> -->
+																<!-- <h5>James Thomas</h5> -->
+																<!-- <div class="designation">Instructor</div> -->
+															</div>
+															<div class="price">
+																<!-- <div class="thumb"><img src="assets/images/resource/image-6.jpg" alt=""></div> -->
+																<!-- <h5>Starts From <br> $45 - $170</h5> -->
+															</div>
+														</div>
+														<!-- <div class="link-btn"><a href="highway-drive.html" class="theme-btn btn-style-one style-three"><span>View Course Details</span></a></div> -->
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-12 course-block">
+												<div class="inner-box">
+													<!-- <div class="image"><img src="assets/images/resource/image-4.jpg" alt=""></div> -->
+													<div class="lower-content">
+														<h4><a href="automatic-car-pack.html">服务器组</a></h4>
+														<div class="text">对部门内多台服务器具有使用、管理权限<br>同时开发并维护一套仅供本校学生使用的资源分享站
+															<br>
+														</div>
+														<div class="course-info">
+															<div class="instructor">
+																<!-- <div class="thumb"><img src="assets/images/resource/author-1.jpg" alt=""></div> -->
+																<!-- <h5>James Thomas</h5> -->
+																<!-- <div class="designation">Instructor</div> -->
+															</div>
+															<div class="price">
+																<!-- <div class="thumb"><img src="assets/images/resource/image-6.jpg" alt=""></div> -->
+																<!-- <h5>Starts From <br> $25 - $60</h5> -->
+															</div>
+														</div>
+														<!-- <div class="link-btn"><a href="automatic-car-pack.html" class="theme-btn btn-style-one style-three"><span>View Course Details</span></a></div> -->
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-12 course-block">
+												<div class="inner-box">
+													<!-- <div class="image"><img src="assets/images/resource/image-5.jpg" alt=""></div> -->
+													<div class="lower-content">
+														<h4><a href="international-drive.html">宣传组</a></h4>
+														<div class="text">宣传制作logo<br> 海报、工作证、工作服、宣传视频拍摄与剪辑<br> </div>
+														<div class="course-info">
+															<div class="instructor">
+																<!-- <div class="thumb"><img src="assets/images/resource/author-1.jpg" alt=""></div> -->
+																<!-- <h5>James Thomas</h5> -->
+																<!-- <div class="designation">Instructor</div> -->
+															</div>
+															<div class="price">
+																<!-- <div class="thumb"><img src="assets/images/resource/image-6.jpg" alt=""></div> -->
+																<!-- <h5>Starts From <br> $80 - $210</h5> -->
+															</div>
+														</div>
+														<!-- <div class="link-btn"><a href="international-drive.html" class="theme-btn btn-style-one style-three"><span>View Course Details</span></a></div> -->
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!--Project Tab-->
+								<div class="p-tab" id="p-tab-3">
+									<div class="row row-10">
+										<div class="theme_carousel owl-theme owl-carousel"
+											data-options='{"loop": true, "margin": 0, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 1000, "responsive":{ "0" :{ "items": "1" }, "600" :{ "items" : "1" }, "768" :{ "items" : "2" } , "992":{ "items" : "3" }, "1200":{ "items" : "3" }}}'>
+											<div class="col-lg-12 course-block">
+												<div class="inner-box">
+													<!-- <div class="image"><img src="assets/images/resource/image-3.jpg" alt=""></div> -->
+													<div class="lower-content">
+														<h4><a href="highway-drive.html">网页组</a></h4>
+														<div class="text">学习编程制作网页<br> 并对网页进行美术设计<br> </div>
+														<div class="course-info">
+															<div class="instructor">
+																<!-- <div class="thumb"><img src="assets/images/resource/author-1.jpg" alt=""></div> -->
+																<!-- <h5>James Thomas</h5> -->
+																<!-- <div class="designation">Instructor</div> -->
+															</div>
+															<div class="price">
+																<!-- <div class="thumb"><img src="assets/images/resource/image-6.jpg" alt=""></div> -->
+																<!-- <h5>Starts From <br> $45 - $170</h5> -->
+															</div>
+														</div>
+														<!-- <div class="link-btn"><a href="highway-drive.html" class="theme-btn btn-style-one style-three"><span>View Course Details</span></a></div> -->
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-12 course-block">
+												<div class="inner-box">
+													<!-- <div class="image"><img src="assets/images/resource/image-4.jpg" alt=""></div> -->
+													<div class="lower-content">
+														<h4><a href="automatic-car-pack.html">服务器组</a></h4>
+														<div class="text">对部门内多台服务器具有使用、管理权限<br>同时开发并维护一套仅供本校学生使用的资源分享站
+															<br>
+														</div>
+														<div class="course-info">
+															<div class="instructor">
+																<!-- <div class="thumb"><img src="assets/images/resource/author-1.jpg" alt=""></div> -->
+																<!-- <h5>James Thomas</h5> -->
+																<!-- <div class="designation">Instructor</div> -->
+															</div>
+															<div class="price">
+																<!-- <div class="thumb"><img src="assets/images/resource/image-6.jpg" alt=""></div> -->
+																<!-- <h5>Starts From <br> $25 - $60</h5> -->
+															</div>
+														</div>
+														<!-- <div class="link-btn"><a href="automatic-car-pack.html" class="theme-btn btn-style-one style-three"><span>View Course Details</span></a></div> -->
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-12 course-block">
+												<div class="inner-box">
+													<!-- <div class="image"><img src="assets/images/resource/image-5.jpg" alt=""></div> -->
+													<div class="lower-content">
+														<h4><a href="international-drive.html">宣传组</a></h4>
+														<div class="text">宣传制作logo<br> 海报、工作证、工作服、宣传视频拍摄与剪辑<br> </div>
+														<div class="course-info">
+															<div class="instructor">
+																<!-- <div class="thumb"><img src="assets/images/resource/author-1.jpg" alt=""></div> -->
+																<!-- <h5>James Thomas</h5> -->
+																<!-- <div class="designation">Instructor</div> -->
+															</div>
+															<div class="price">
+																<!-- <div class="thumb"><img src="assets/images/resource/image-6.jpg" alt=""></div> -->
+																<!-- <h5>Starts From <br> $80 - $210</h5> -->
+															</div>
+														</div>
+														<!-- <div class="link-btn"><a href="international-drive.html" class="theme-btn btn-style-one style-three"><span>View Course Details</span></a></div> -->
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
 
-    <!-- Working Process section -->
-    <section id="job" class="working-process-section">
-        <div class="background-icon"><img src="assets/images/icons/icon-12.png" alt=""></div>
-        <div class="auto-container">
-            <div class="top-content">
-                <div class="sec-title text-center mb-30">
-                    <div class="sub-title">learning how to operate with us</div>
-                    <h2>网维<del>打工</del>人是怎么工作的？</h2>
-                </div>
-                <div class="text text-center">确认外勤时间地点准备出发啦! <br>尽快到达,礼貌问好,认真工作 <br>问题共享,提高工作效率 </div>
-            </div>
-            <div class="wrapper-box">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 process-block">
-                        <div class="inner-box">
-                            <div class="count">01</div>
-                            <div class="content">
-                                <div>
-                                    <h4>按照值班表来值班<br>在值班的过程中接到外勤（支线）</h4>
-                                    <!--<div class="text">15字x3不能再多了1234456 <br> 15字x3不能再多了1234456 <br> 15字x3不能再多了1234456</div>-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 process-block active">
-                        <div class="inner-box">
-                            <div class="count">02</div>
-                            <div class="content">
-                                <div>
-                                    <h4>带着相应工具喊着小伙伴 <br> 外勤start（支线开始）</h4>
-                                    <!--<div class="text">15字x3不能再多了1234456 <br> 15字x3不能再多了1234456 <br> 15字x3不能再多了1234456</div>-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 process-block">
-                        <div class="inner-box">
-                            <div class="count">03</div>
-                            <div class="content">
-                                <div>
-                                    <h4>外勤结束回值班室等刷 <br> 记得补上工作日志</h4>
-                                    <!--<div class="text">15字x3不能再多了1234456 <br> 15字x3不能再多了1234456 <br> 15字x3不能再多了1234456</div>-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+			<!-- Working Process section -->
+			<section id="job" class="working-process-section">
+				<div class="background-icon"><img src="assets/images/icons/icon-12.png" alt=""></div>
+				<div class="auto-container">
+					<div class="top-content">
+						<div class="sec-title text-center mb-30">
+							<div class="sub-title">learning how to operate with us</div>
+							<h2>网维<del>打工</del>人是怎么工作的？</h2>
+						</div>
+						<div class="text text-center">确认外勤时间地点准备出发啦! <br>尽快到达,礼貌问好,认真工作 <br>问题共享,提高工作效率 </div>
+					</div>
+					<div class="wrapper-box">
+						<div class="row">
+							<div class="col-lg-4 col-md-6 process-block">
+								<div class="inner-box">
+									<div class="count">01</div>
+									<div class="content">
+										<div>
+											<h4>按照值班表来值班<br>在值班的过程中接到外勤（支线）</h4>
+											<!--<div class="text">15字x3不能再多了1234456 <br> 15字x3不能再多了1234456 <br> 15字x3不能再多了1234456</div>-->
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6 process-block active">
+								<div class="inner-box">
+									<div class="count">02</div>
+									<div class="content">
+										<div>
+											<h4>带着相应工具喊着小伙伴 <br> 外勤start（支线开始）</h4>
+											<!--<div class="text">15字x3不能再多了1234456 <br> 15字x3不能再多了1234456 <br> 15字x3不能再多了1234456</div>-->
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6 process-block">
+								<div class="inner-box">
+									<div class="count">03</div>
+									<div class="content">
+										<div>
+											<h4>外勤结束回值班室等刷 <br> 记得补上工作日志</h4>
+											<!--<div class="text">15字x3不能再多了1234456 <br> 15字x3不能再多了1234456 <br> 15字x3不能再多了1234456</div>-->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-    <!-- Funfacts Section -->
-    <section class="funfacts-section">
-        <div class="auto-container">
-            <div class="row">
-                <!--Column-->
-                <div class="column counter-column col-lg-4 col-md-6">
-                    <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="icon-outer">
-                            <div class="icon"><img src="assets/images/icons/icon-9.png" alt=""></div>
-                            <div class="hover-icon"><img src="assets/images/icons/icon-9.png" alt=""></div>
-                        </div>
-                        <div class="content">
-                            <div class="count-outer count-box">
-                                <span class="count-text" data-speed="3000" data-stop="98">0</span><span>%</span>
-                            </div>
-                            <div class="text">出勤成功解决 <br> 问题的比率</div>
-                        </div>
-                    </div>
-                </div>
-                <!--Column-->
-                <div class="column counter-column col-lg-4 col-md-6">
-                    <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="icon-outer">
-                            <div class="icon"><img src="assets/images/icons/icon-10.png" alt=""></div>
-                            <div class="hover-icon"><img src="assets/images/icons/icon-10.png" alt=""></div>
-                        </div>
-                        <div class="content">
-                            <div class="count-outer count-box">
-                                <span class="count-text" data-speed="3000" data-stop="450">0</span><span>+</span>
-                            </div>
-                            <div class="text">累计总外勤数 </div>
-                        </div>
-                    </div>
-                </div>
-                <!--Column-->
-                <div class="column counter-column col-lg-4 col-md-6">
-                    <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="icon-outer">
-                            <div class="icon"><img src="assets/images/icons/icon-11.png" alt=""></div>
-                            <div class="hover-icon"><img src="assets/images/icons/icon-11.png" alt=""></div>
-                        </div>
-                        <div class="content">
-                            <div class="count-outer count-box">
-                                <span class="count-text" data-speed="3000" data-stop="4">0</span><span>Yrs</span>
-                            </div>
-                            <div class="text">部门成立 <br> 总时间</div>
-                        </div>
-                    </div>
-                </div>
+			<!-- Funfacts Section -->
+			<section class="funfacts-section">
+				<div class="auto-container">
+					<div class="row">
+						<!--Column-->
+						<div class="column counter-column col-lg-4 col-md-6">
+							<div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+								<div class="icon-outer">
+									<div class="icon"><img src="assets/images/icons/icon-9.png" alt=""></div>
+									<div class="hover-icon"><img src="assets/images/icons/icon-9.png" alt=""></div>
+								</div>
+								<div class="content">
+									<div class="count-outer count-box">
+										<span class="count-text" data-speed="3000" data-stop="98">0</span><span>%</span>
+									</div>
+									<div class="text">出勤成功解决 <br> 问题的比率</div>
+								</div>
+							</div>
+						</div>
+						<!--Column-->
+						<div class="column counter-column col-lg-4 col-md-6">
+							<div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+								<div class="icon-outer">
+									<div class="icon"><img src="assets/images/icons/icon-10.png" alt=""></div>
+									<div class="hover-icon"><img src="assets/images/icons/icon-10.png" alt=""></div>
+								</div>
+								<div class="content">
+									<div class="count-outer count-box">
+										<span class="count-text" data-speed="3000"
+											data-stop="450">0</span><span>+</span>
+									</div>
+									<div class="text">累计总外勤数 </div>
+								</div>
+							</div>
+						</div>
+						<!--Column-->
+						<div class="column counter-column col-lg-4 col-md-6">
+							<div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+								<div class="icon-outer">
+									<div class="icon"><img src="assets/images/icons/icon-11.png" alt=""></div>
+									<div class="hover-icon"><img src="assets/images/icons/icon-11.png" alt=""></div>
+								</div>
+								<div class="content">
+									<div class="count-outer count-box">
+										<span class="count-text" data-speed="3000"
+											data-stop="4">0</span><span>Yrs</span>
+									</div>
+									<div class="text">部门成立 <br> 总时间</div>
+								</div>
+							</div>
+						</div>
 
-            </div>
-        </div>
-    </section>
+					</div>
+				</div>
+			</section>
 
-    <!-- Info form section -->
-    <section class="info-form-section" style="background-image: url(assets/images/background/bg-2.jpg);">
-        <!--<div class="signal-image-one" data-parallax='{"x": -30}'><img src="assets/images/resource/image-1.png" alt=""></div>-->
-        <!--<div class="signal-image-two" data-parallax='{"x": 30}'><img src="assets/images/resource/image-2.png" alt=""></div>-->
-        <div class="auto-container">
-            <div class="row align-items-center" id="form">
-                <div class="col-lg-6">
-                    <div class="content-block" id="mama">
-                        <div class="sec-title light mb-30">
-                            <div class="sub-title" >在这里，可以学习更多科技知识，还有部门隐藏福利</div>
-                            <h2>我们期待你的加入</h2>
-                        </div>
-                        <div class="text mb-30">你真的长得像我同事</div>
-                        <ul class="list">
-                            <li>工位已经为你留好</li>
-                            <li>工具已经准备就绪</li>
-                            <li>值班室空调已启动</li>
-                            <li>校园定向运动开始<del>bushi</del></li>
-                        </ul>
-                    </div>
-                </div>
-                <div id='f1' class="col-lg-6">
-                    <div class="consult-form">
-                        <h3>在这里提交你的信息</h3>
-                        <div class="text">我们将严格保护的信息</div>
-                        <form id="form1">
-                            <div class="row">
-                                <!--required="required"-->
-                                <!--不需要添加为必填项目吗？ 李杰相-->
-                                <div class="form-group col-md-12">
-                                    <input  placeholder="学号/Number" name="number">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <input  placeholder="姓名/Name" name="name">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <select name="xingbie">
-                                    <option value="">选择性别</option>
-                                    <option value="男">男</option>
-                                    <option value="女">女</option>
-                                    </select>
-                                </div>       
-                                                     
-                                <div class="form-group col-md-12">
-                                    <select name="xueyuan"> 
-                                        <option value="NULL">请选择学院</option> <option value="机械与汽车工程学院">机械与汽车工程学院</option> <option value="电子信息工程学院">电子信息工程学院</option> <option value="电气工程与自动化学院">电气工程与自动化学院</option> <option value="轻工科学与工程学院">轻工科学与工程学院</option> <option value="生物工程学院">生物工程学院</option> <option value="食品科学与工程学院">食品科学与工程学院</option> <option value="环境科学与工程学院">环境科学与工程学院</option> <option value="管理学院">管理学院</option> <option value="艺术设计学院">艺术设计学院</option> <option value="化学与化工学院">化学与化工学院</option> <option value="药学院">药学院</option><option value="材料科学与工程学院">材料科学与工程学院</option> <option value="计算机科学与技术学院">计算机科学与技术学院</option> <option value="马克思主义学院">马克思主义学院</option> <option value="政法学院">政法学院</option> <option value="外国语学院">外国语学院</option> <option value="数学与统计学院">数学与统计学院</option> <option value="金融学院">金融学院</option> <option value="体育与文化产业学院">体育与文化产业学院</option> <option value="网络空间安全学院">网络空间安全学院</option> <option value="光电工程国际化学院">光电工程国际化学院</option> <option value="能源与动力工程学院">能源与动力工程学院</option> <option value="国际研究生学院">国际研究生学院</option> <option value="继续教育学院">继续教育学院</option> <option value="海洋技术科学学院">海洋技术科学学院</option> <option value="基辅学院">基辅学院</option> <option value="生物基材料与绿色造纸国家重点实验室">生物基材料与绿色造纸国家重点实验室</option>
-                                    </select> 
-                                </div>
-                                
-                                <div class="form-group col-md-6">
-                                    <input  placeholder="电话/Phone" name="phone"  maxlength="11" minlength="0" oninput = "value=value.replace(/[^\d]/g,'')">
-                                    <!--添加限制 只能输入数字，且长度在0-11范围内 -->
-                                    <!--有一说一我们可不可以加上收集学号，这样能删掉学院和年纪唉~（于 -->
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <input  placeholder="QQ" name="qq">
-                                </div>
-                                <div class="form-group col-md-12">
-                                    <textarea placeholder="自我介绍、特长、你感兴趣或擅长的/You’re Interested Or Expert In" name="InterestedOrExpert"></textarea>
-                                </div>
-                                <div class="form-group col-md-12">
-                                    <button type="button" class="theme-btn btn-style-one" onclick="post()"><span>提交</span></button>
-                                    <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=HHadh2UC"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="" title=""></a>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- 话说下面的部分要不要删除啊（于 -->
-    <!--有一说一我觉得需要一张部门的合照放在最下面（于-->
-    <!--例会讨论一下（于-->
-    <!-- Feature banner section -->
-    
+			<!-- Info form section -->
+			<section class="info-form-section" style="background-image: url(assets/images/background/bg-2.jpg);">
+				<!--<div class="signal-image-one" data-parallax='{"x": -30}'><img src="assets/images/resource/image-1.png" alt=""></div>-->
+				<!--<div class="signal-image-two" data-parallax='{"x": 30}'><img src="assets/images/resource/image-2.png" alt=""></div>-->
+				<div class="auto-container">
+					<div class="row align-items-center" id="form">
+						<div class="col-lg-6">
+							<div class="content-block" id="mama">
+								<div class="sec-title light mb-30">
+									<div class="sub-title">在这里，可以学习更多科技知识，还有部门隐藏福利</div>
+									<h2>我们期待你的加入</h2>
+								</div>
+								<div class="text mb-30">你真的长得像我同事</div>
+								<ul class="list">
+									<li>工位已经为你留好</li>
+									<li>工具已经准备就绪</li>
+									<li>值班室空调已启动</li>
+									<li>校园定向运动开始<del>bushi</del></li>
+								</ul>
+							</div>
+						</div>
+						<div id='f1' class="col-lg-6">
+							<div class="consult-form">
+								<h3>在这里提交你的信息</h3>
+								<div class="text">我们将严格保护的信息</div>
+								<form id="form1">
+									<div class="row">
+										<!--required="required"-->
+										<!--不需要添加为必填项目吗？ 李杰相-->
+										<div class="form-group col-md-12">
+											<input placeholder="学号/Number" name="number">
+										</div>
+										<div class="form-group col-md-6">
+											<input placeholder="姓名/Name" name="name">
+										</div>
+										<div class="form-group col-md-6">
+											<select name="xingbie">
+												<option value="">选择性别</option>
+												<option value="男">男</option>
+												<option value="女">女</option>
+											</select>
+										</div>
 
-    <footer class="main-footer" style="background-image: url(assets/images/background/bg-1.jpg);">
-        <div class="auto-container">
-            <!--Widgets Section-->
-            <div class="widgets-section">
-                <div class="row clearfix">
-                    
-                    <!--Column-->
-                    <div class="column col-lg-3 col-md-6">
-                        <div class="widget about-widget">
-                            <!-- <div class="logo"><a href="index.html"><img src="assets/images/logo-2.png" alt=""></a></div> -->
-                            <div class="text">
-                                <li>齐鲁工业大学网络运维</li>
-                                <li>明德励志 崇实尚能</li>
-                            </div>
-                            <ul class="social-links">
-                                <!--社交媒体！？我们好像没有，我写写bilibili和qq群的CSS吧 李杰相-->
-                                <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+										<div class="form-group col-md-12">
+											<select name="xueyuan">
+												<option value="NULL">请选择学院</option>
+												<option value="机械与汽车工程学院">机械与汽车工程学院</option>
+												<option value="电子信息工程学院">电子信息工程学院</option>
+												<option value="电气工程与自动化学院">电气工程与自动化学院</option>
+												<option value="轻工科学与工程学院">轻工科学与工程学院</option>
+												<option value="生物工程学院">生物工程学院</option>
+												<option value="食品科学与工程学院">食品科学与工程学院</option>
+												<option value="环境科学与工程学院">环境科学与工程学院</option>
+												<option value="管理学院">管理学院</option>
+												<option value="艺术设计学院">艺术设计学院</option>
+												<option value="化学与化工学院">化学与化工学院</option>
+												<option value="药学院">药学院</option>
+												<option value="材料科学与工程学院">材料科学与工程学院</option>
+												<option value="计算机科学与技术学院">计算机科学与技术学院</option>
+												<option value="马克思主义学院">马克思主义学院</option>
+												<option value="政法学院">政法学院</option>
+												<option value="外国语学院">外国语学院</option>
+												<option value="数学与统计学院">数学与统计学院</option>
+												<option value="金融学院">金融学院</option>
+												<option value="体育与文化产业学院">体育与文化产业学院</option>
+												<option value="网络空间安全学院">网络空间安全学院</option>
+												<option value="光电工程国际化学院">光电工程国际化学院</option>
+												<option value="能源与动力工程学院">能源与动力工程学院</option>
+												<option value="国际研究生学院">国际研究生学院</option>
+												<option value="继续教育学院">继续教育学院</option>
+												<option value="海洋技术科学学院">海洋技术科学学院</option>
+												<option value="基辅学院">基辅学院</option>
+												<option value="生物基材料与绿色造纸国家重点实验室">生物基材料与绿色造纸国家重点实验室</option>
+											</select>
+										</div>
+
+										<div class="form-group col-md-6">
+											<input placeholder="电话/Phone" name="phone" maxlength="11" minlength="0"
+												oninput="value=value.replace(/[^\d]/g,'')">
+											<!--添加限制 只能输入数字，且长度在0-11范围内 -->
+											<!--有一说一我们可不可以加上收集学号，这样能删掉学院和年纪唉~（于 -->
+										</div>
+										<div class="form-group col-md-6">
+											<input placeholder="QQ" name="qq">
+										</div>
+										<div class="form-group col-md-12">
+											<textarea placeholder="自我介绍、特长、你感兴趣或擅长的/You’re Interested Or Expert In"
+												name="InterestedOrExpert"></textarea>
+										</div>
+										<div class="form-group col-md-12">
+											<button type="button" class="theme-btn btn-style-one"
+												onclick="post()"><span>提交</span></button>
+											<a target="_blank" href="https://jq.qq.com/?_wv=1027&k=HHadh2UC"><img
+													border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt=""
+													title=""></a>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- 话说下面的部分要不要删除啊（于 -->
+			<!--有一说一我觉得需要一张部门的合照放在最下面（于-->
+			<!--例会讨论一下（于-->
+			<!-- Feature banner section -->
+
+
+			<footer class="main-footer" style="background-image: url(assets/images/background/bg-1.jpg);">
+				<div class="auto-container">
+					<!--Widgets Section-->
+					<div class="widgets-section">
+						<div class="row clearfix">
+
+							<!--Column-->
+							<div class="column col-lg-3 col-md-6">
+								<div class="widget about-widget">
+									<!-- <div class="logo"><a href="index.html"><img src="assets/images/logo-2.png" alt=""></a></div> -->
+									<div class="text">
+										<li>齐鲁工业大学网络运维</li>
+										<li>明德励志 崇实尚能</li>
+									</div>
+									<ul class="social-links">
+										<!--社交媒体！？我们好像没有，我写写bilibili和qq群的CSS吧 李杰相-->
+										<!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                 <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                 <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
                                 <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li> -->
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <!--Column-->
-                    <!-- <div class="column col-lg-3 col-md-6">
+									</ul>
+								</div>
+							</div>
+
+							<!--Column-->
+							<!-- <div class="column col-lg-3 col-md-6">
                         <div class="widget newsletter-widget">
                             <h3 class="widget-title">订阅我们的最新动态</h3>
                             <div class="widget-content">
@@ -840,9 +877,9 @@
                         </div>
                     </div> -->
 
-                    <!--Column-->
-                    <div class="column col-lg-3 col-md-6">
-                        <!-- <div class="widget links-widget">
+							<!--Column-->
+							<div class="column col-lg-3 col-md-6">
+								<!-- <div class="widget links-widget">
                             <h3 class="widget-title">了解更多</h3>
                             <div class="widget-content">
                                 <ul>
@@ -851,104 +888,243 @@
                                 </ul>                                        
                             </div>
                         </div> -->
-                    </div>
-                    <div class="column col-lg-3 col-md-6">
-                       
-                    </div>
-                    
-                    <!--Column-->
-                    <div class="column col-lg-3 col-md-6">
-                        <div class="widget contact-widget">
-                            <h3 class="widget-title">联系我们</h3>
-                            <div class="widget-content">
-                                <ul class="contact-info">
-                                    <li>
-                                        <div class="icon"><span class="fas fa-flag"></span></div>
-                                        <div class="text">齐鲁工业大学图书馆1楼网络信息中心</div>
-                                    </li>
-                                    <li>
-                                        <div class="icon"><span class="fas fa-phone-volume"></span></div>
-                                        <div class="text">
-                                            <a>+86 89631358</a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon"><span class="fas fa-clock"></span></div>
-                                        <div class="text">
-                                            周一到周五 <br> 8:30 am to 4:50 pm
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-        <!-- Footer Bottom -->
-        <div class="footer-bottom">
-            <div class="auto-container">
-                <div class="wrapper-box">
-                    <div class="copyright">
-                        <div class="text">Copyright &copy; 2021.QLU_NetworkOperationAndMaintenance All rights reserved.</div>
-                    </div>
-                    <div class="footer-menu">
-                        <ul>
-                            <!--<li><a href="#">Sitemap </a></li>-->
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-	
-</div>
-<!--End pagewrapper-->
+							</div>
+							<div class="column col-lg-3 col-md-6">
 
-<!--Scroll to top-->
-<div class="scroll-to-top scroll-to-target" data-target="html"><span class="flaticon-right-arrow-4"></span></div>
+							</div>
 
-<script src="assets/js/jquery.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/bootstrap-select.min.js"></script>
-<script src="assets/js/jquery.fancybox.js"></script>
-<script src="assets/js/isotope.js"></script>
-<script src="assets/js/owl.js"></script>
-<script src="assets/js/appear.js"></script>
-<script src="assets/js/wow.js"></script>
-<script src="assets/js/lazyload.js"></script>
-<script src="assets/js/scrollbar.js"></script>
-<script src="assets/js/TweenMax.min.js"></script>
-<script src="assets/js/swiper.min.js"></script>
-<script src="assets/js/jquery.polyglot.language.switcher.js"></script>
-<script src="assets/js/jquery.ajaxchimp.min.js"></script>
-<script src="assets/js/parallax-scroll.js"></script>
-<script src="assets/js/log.js"></script>
-<script src="assets/js/script.js"></script>
-<script>
-    
-    function post() {
-            $.ajax({
-            //几个参数需要注意一下
-                type: "POST",//方法类型
-                timeout : 1000,
-                dataType: "json",//预期服务器返回的数据类型
-                url: "https://kt.vshex.com/inc/postdata.php" ,//url
-                data: $('#form1').serialize(),
-                success: function (result) {
-                    console.log(result);//打印服务端返回的数据(调试用)
-                    var a = eval(result);
-                    alert(a['msg']);
-                },
-                error : function() {
-                    alert("异常！若重复多次失败，请加群反馈，感谢！");
-                }
-            });
-        }
-</script>
+							<!--Column-->
+							<div class="column col-lg-3 col-md-6">
+								<div class="widget contact-widget">
+									<h3 class="widget-title">联系我们</h3>
+									<div class="widget-content">
+										<ul class="contact-info">
+											<li>
+												<div class="icon"><span class="fas fa-flag"></span></div>
+												<div class="text">齐鲁工业大学图书馆1楼网络信息中心</div>
+											</li>
+											<li>
+												<div class="icon"><span class="fas fa-phone-volume"></span></div>
+												<div class="text">
+													<a>0531-89631358</a>
+												</div>
+											</li>
+											<li>
+												<div class="icon"><span class="fas fa-clock"></span></div>
+												<div class="text">
+													周一到周五 <br> 8:30 am to 4:50 pm
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!-- Footer Bottom -->
+				<div class="footer-bottom">
+					<div class="auto-container">
+						<div class="wrapper-box">
+							<div class="copyright">
+								<div class="text">Copyright &copy; 2021.QLU_NetworkOperationAndMaintenance All rights
+									reserved.</div>
+							</div>
+							<div class="footer-menu">
+								<ul>
+									<!--<li><a href="#">Sitemap </a></li>-->
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
 
 
-</body>
+			<!-- Wang Yuzhe -->
+			<!--宣传视频按钮-->
+			<div id="show-video" class="service-block-one col-lg-3 col-md-6" onclick='document.getElementById("overlay").hidden = false;'>
+				<div id="text"><i class="fa fa-video-camera" id="video-icon"> 了解我们</i></div>
+			</div>
+
+			<!-- 遮罩层 -->
+			<div id="overlay">
+				<div id="video-close" role="button" onclick='document.getElementById("overlay").hidden = true;'><i class="fa fa-close"></i></div>
+
+				<video controls id="video">
+					<source src="./assets/video.mp4" type="video/mp4">
+					<p>你的浏览器不支持内嵌视频，<a href="./assets/video.mp4">点我</a>直接观看。</p>
+				</video>
+				<!-- <video src="assets/video.mp4" type=""></video> -->
+			</div>
+
+			<script type="text/javascript">
+				$("#video-close").onclick(function(e) => {
+					$("#overlay").hide();
+				})
+				
+				function closeVideo()
+				{
+					
+					document.getElementById("overlay").hidden = true;
+				}
+			</script>
+
+			<style>
+				/* 在导航栏的“资源分享站”下方显示“限校园网”四个字 */
+				.main-menu #nav-res-site:after {
+					content: "（限校园网）";
+					position: absolute;
+					font-size: small;
+					color: var(--gray);
+					left: 0;
+					right: 0;
+					top: 1.2rem;
+				}
+
+				.mobile-menu #nav-res-site:after {
+					content: "（限校园网）";
+					font-size: small;
+				}
+
+
+				#show-video {
+					position: fixed;
+					right: 4rem;
+					bottom: 5rem;
+					z-index: 2147483647 !important;
+
+					border-radius: 8rem;
+					border-style: dashed;
+					/* border-color: var(--orange); */
+					border-color: #2fac94;
+					/* opacity: 0.8; */
+
+					display: flex;
+					justify-content: center;
+					align-items: center;
+
+					background-color: #2fac94;
+					opacity: 0.6;
+
+					color: #000;
+
+					width: 20vw;
+					height: 8vw;
+					min-width: 6rem;
+					min-height: 3rem;
+				}
+
+				#show-video:hover {
+					background-color: #2fac94;
+					opacity: 0.8;
+
+					color: #fff;
+					transition: background-color 0.1s linear 0s;
+
+				}
+
+				#show-video #text:before {
+					content: "";
+					/* font-size: larger; */
+					color: #2fac94;
+					z-index: 2147483647 !important;
+					transition: color 0.1s linear 0s;
+				}
+
+				#show-video #video-icon {
+					font-size: 2vw;
+
+				}
+
+				#overlay {
+					/* display: none; */
+					z-index: 2147483648 !important;
+					position: fixed;
+					background-color: #000000;
+					/* opacity: 0.8; */
+					left: 0;
+					top: 0;
+					width: 100vw;
+					height: 100vh;
+
+				}
+
+				#overlay #video-close {
+					position: fixed;
+					right: 3rem;
+					top: 3rem;
+					width: 3rem;
+					height: 3rem;
+					font-size: 3rem;
+					color: #fff;
+					opacity: 1;
+					text-align: center;
+					z-index: 2147483699 !important;
+				}
+
+				#overlay video {
+					position: fixed;
+					top: 0;
+					left: 0;
+					width: 100vw;
+					height: 100vh;
+					z-index: 1500 !important;
+				}
+			</style>
+			
+
+		</div>
+		<!--End pagewrapper-->
+
+		<!--Scroll to top-->
+		<!-- 		<div class="scroll-to-top scroll-to-target" data-target="html">
+			<span class="flaticon-right-arrow-4"></span>
+		</div> -->
+
+
+
+
+		<script src="assets/js/jquery.js"></script>
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/bootstrap-select.min.js"></script>
+		<script src="assets/js/jquery.fancybox.js"></script>
+		<script src="assets/js/isotope.js"></script>
+		<script src="assets/js/owl.js"></script>
+		<script src="assets/js/appear.js"></script>
+		<script src="assets/js/wow.js"></script>
+		<script src="assets/js/lazyload.js"></script>
+		<script src="assets/js/scrollbar.js"></script>
+		<script src="assets/js/TweenMax.min.js"></script>
+		<script src="assets/js/swiper.min.js"></script>
+		<script src="assets/js/jquery.polyglot.language.switcher.js"></script>
+		<script src="assets/js/jquery.ajaxchimp.min.js"></script>
+		<script src="assets/js/parallax-scroll.js"></script>
+		<script src="assets/js/log.js"></script>
+		<script src="assets/js/script.js"></script>
+		<script>
+			function post() {
+				$.ajax({
+					//几个参数需要注意一下
+					type: "POST", //方法类型
+					timeout: 1000,
+					dataType: "json", //预期服务器返回的数据类型
+					url: "https://kt.vshex.com/inc/postdata.php", //url
+					data: $('#form1').serialize(),
+					success: function(result) {
+						console.log(result); //打印服务端返回的数据(调试用)
+						var a = eval(result);
+						alert(a['msg']);
+					},
+					error: function() {
+						alert("异常！若重复多次失败，请加群反馈，感谢！");
+					}
+				});
+			}
+		</script>
+
+
+	</body>
 </html>
